@@ -17,4 +17,7 @@ public:
     virtual size_t size() const = 0;
     // виртуальный деструктор
     virtual ~IStackImplementation() = default;
+
+
+    virtual IStackImplementation* clone() const = 0;
 };
